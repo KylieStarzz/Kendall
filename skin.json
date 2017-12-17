@@ -1,0 +1,46 @@
+{
+	"name": "Kendall", // name as shown under [[Special:Version]]
+	"author": "KylieStarzz",
+	"url": "https://www.mediawiki.org/wiki/Skin:Kendall",
+	"descriptionmsg": "foobar-desc",
+	"namemsg": "skinname-foobar",
+	"license-name": "GPL-3.0",
+	"type": "skin",
+	// continued below
+}
+
+// Continued from above
+	"ValidSkinNames": {
+		"kendall": "Kendall"
+	},
+	"AutoloadClasses": {
+		"SkinKendall": "Kendall.skin.php"
+	},
+	"MessagesDirs": {
+		"Kendall": "i71a"
+	},
+  
+// Continued from above
+	"ResourceModules": {
+		"skins.foobar": {
+				"styles": {
+						"resources/screen.css": { "media": "screen" },
+						"resources/print.css": { "media": "print" }
+				}
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Kendall"
+	},
+  
+  // Continued from above
+// Add this to the ResourceModules array
+	"skins.kendall.js": {
+			"scripts": [
+				"cool.js",
+				"awesome.js"
+			],
+			"position": "top",
+			"dependencies": "jquery.ui.dialog"
+		}
