@@ -32,7 +32,7 @@ $wgValidSkinNames['kendall'] = 'Kendall';
 
 $wgAutoloadClasses['SkinKendall'] = __DIR__ . '/Kendall.skin.php';
 $wgMessagesDirs['Kendall'] = __DIR__ . '/i71a';
-$wgExtensionMessagesFiles['Kendall'] = __DIR__ . '/Kendall.i71a.php';
+$wgExtensionMessagesFiles['Kendall'] = __DIR__ . '/Kendall.i18n.php';
 
 // Continued from above
 $wgResourceModules['skins.kendall'] = array(
