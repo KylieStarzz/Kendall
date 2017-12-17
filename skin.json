@@ -17,12 +17,12 @@
 		"SkinKendall": "Kendall.skin.php"
 	},
 	"MessagesDirs": {
-		"Kendall": "i71a"
+		"Kendall": "i18n"
 	},
   
 // Continued from above
 	"ResourceModules": {
-		"skins.foobar": {
+		"skins.kendall": {
 				"styles": {
 						"resources/screen.css": { "media": "screen" },
 						"resources/print.css": { "media": "print" }
