@@ -121,6 +121,25 @@ class KendallTemplate extends BaseTemplate {
 		$this->html( 'headelement' ); ?>
 
 /** The skin's code goes here.
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 11px;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    margin-left: 20px;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
   * The rest of this page explains what to write here.
 **/
 
