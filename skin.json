@@ -2,8 +2,8 @@
 	"name": "Kendall", // name as shown under [[Special:Version]]
 	"author": "KylieStarzz",
 	"url": "https://www.mediawiki.org/wiki/Skin:Kendall",
-	"descriptionmsg": "foobar-desc",
-	"namemsg": "skinname-foobar",
+	"descriptionmsg": "kendall-desc",
+	"namemsg": "skinname-kendall",
 	"license-name": "GPL-3.0",
 	"type": "skin",
 	// continued below
