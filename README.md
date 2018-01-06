@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+## This is the page for the Kendall MediaWiki skin
 
-You can use the [editor on GitHub](https://github.com/KylieStarzz/Kendall/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Thank you for choosing GitHub as a server to download the Kendall MediaWiki skin. Font changes are part of this modernization of the Vector skin.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+If you have any questions, please email me at naymyoko AT icloud DOT com (please replace AT with this symbol (@) and DOT with this symbol (.)).
 
-### Markdown
+### For users with MediaWiki 1.25 or later
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Do not keep Kendall.skin.php as the main file for the boilerplate and definitions, but rather, the bulk of the Kendall skin, as the file includes the skin's code. The file skin.json is the main file for the boilerplate and definitions.
 
-```markdown
-Syntax highlighted code block
+### For users with MediaWiki 1.24 or earlier
 
-# Header 1
-## Header 2
-### Header 3
+Delete the skin.json file (as it will work only on MediaWiki 1.25+) and keep the .php file.
 
-- Bulleted
-- List
+### Installing the skin on your MediaWiki-powered wiki
 
-1. Numbered
-2. List
+The best part comes here: installing and internationalizing this skin for your wiki! Add this code to your MediaWiki-powered wiki:
 
-**Bold** and _Italic_ and `Code` text
+<?php $this->msgWiki( 'msg-key' ); ?>
 
-[Link](url) and ![Image](src)
-```
+To install this skin for your wiki, load it from your wiki's LocalSettings.php:
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+wfLoadSkin( "Kendall" );
 
-### Jekyll Themes
+In older MediaWiki versions, you have to explicitly load this skin's PHP file using require_once(). This is still supported in 1.25 onwards for backwards-compatibility:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/KylieStarzz/Kendall/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+require_once( "$IP/skins/Kendall/Kendall.php" )
 
-### Support or Contact
+Before MediaWiki 1.25, there was an "auto-discovery" mechanism that detected skins in your wiki's "skins" folder and automatically loaded all skins from it; this functionality no longer exists.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+To try out this skin you can:
+
+- change $wgDefaultSkin to make this skin the default skin for all users of your wiki
+- go to Special:Preferences > Appearance while logged in and either change to the new skin or click its "Preview" link
+- add the ?useskin=foobar query string parameter to any wiki URL.
+
