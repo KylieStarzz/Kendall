@@ -16,15 +16,15 @@ Delete the skin.json file (as it will work only on MediaWiki 1.25+) and keep the
 
 The best part comes here: installing and internationalizing this skin for your wiki! Add this code to your MediaWiki-powered wiki:
 
-<?php $this->msgWiki( 'msg-key' ); ?>
+    <?php $this->msgWiki( 'msg-key' ); ?>
 
 To install this skin for your wiki, load it from your wiki's LocalSettings.php:
 
-wfLoadSkin( "Kendall" );
+    wfLoadSkin( "Kendall" );
 
 In older MediaWiki versions, you have to explicitly load this skin's PHP file using require_once(). This is still supported in 1.25 onwards for backwards-compatibility:
 
-require_once( "$IP/skins/Kendall/Kendall.php" )
+    require_once( "$IP/skins/Kendall/Kendall.php" )
 
 Before MediaWiki 1.25, there was an "auto-discovery" mechanism that detected skins in your wiki's "skins" folder and automatically loaded all skins from it; this functionality no longer exists.
 
