@@ -32,5 +32,5 @@ To try out this skin you can:
 
 - change $wgDefaultSkin to make this skin the default skin for all users of your wiki
 - go to Special:Preferences > Appearance while logged in and either change to the new skin or click its "Preview" link
-- add the ?useskin=foobar query string parameter to any wiki URL.
+- add the ?useskin=kendall query string parameter to any wiki URL.
 
