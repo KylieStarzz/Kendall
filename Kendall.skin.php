@@ -149,4 +149,8 @@ h3 {
 	}
 }
 
-
+<?php if ( $this->data['newtalk'] ) { ?>
+  <div class="usermessage"> <!-- The CSS class used in Monobook and Vector -->
+    <?php $this->html( 'newtalk' );?>
+  </div>
+<?php } ?>
