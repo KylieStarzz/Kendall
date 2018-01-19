@@ -154,3 +154,22 @@ h3 {
     <?php $this->html( 'newtalk' );?>
   </div>
 <?php } ?>
+
+<?php $this->text( 'sitename' ); ?>
+
+<a
+	href="<?php 
+		echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] );
+		// This outputs your wiki's main page URL to the browser.
+		?>"
+	<?php echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'p-logo' ) ) ?>
+>
+	<img src="<?php 
+		 	$this->text( 'logopath' ); 	
+		 	// This outputs the path to your logo's image
+		 	// You can also use $this->data['logopath'] to output the raw URL of the image. Remember to HTML-escape
+		 	// if you're using this method, because the text() method does it automatically.
+		?>"
+		alt="<?php $this->text( 'sitename' ) ?>"
+	>
+</a>
